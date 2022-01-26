@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		F6879F3A27A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6879F3927A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift */; };
-		F6879F3C27A1F3DC0022C3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6879F3B27A1F3DC0022C3F0 /* ContentView.swift */; };
+		F6879F3C27A1F3DC0022C3F0 /* TopQuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6879F3B27A1F3DC0022C3F0 /* TopQuestionListView.swift */; };
 		F6879F3E27A1F3DC0022C3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6879F3D27A1F3DC0022C3F0 /* Assets.xcassets */; };
 		F6879F4127A1F3DC0022C3F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6879F4027A1F3DC0022C3F0 /* Preview Assets.xcassets */; };
+		F6BD36CF27A2056D00792F5D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36CE27A2056D00792F5D /* CounterView.swift */; };
+		F6BD36D227A2066F00792F5D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D127A2066F00792F5D /* Enums.swift */; };
+		F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D427A2099D00792F5D /* QuestionCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6879F3627A1F3DC0022C3F0 /* Oracle Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oracle Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6879F3927A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oracle_Code_ChallengeApp.swift; sourceTree = "<group>"; };
-		F6879F3B27A1F3DC0022C3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6879F3B27A1F3DC0022C3F0 /* TopQuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionListView.swift; sourceTree = "<group>"; };
 		F6879F3D27A1F3DC0022C3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6879F4027A1F3DC0022C3F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6BD36CE27A2056D00792F5D /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		F6BD36D127A2066F00792F5D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F6BD36D427A2099D00792F5D /* QuestionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		F6879F3827A1F3DC0022C3F0 /* Oracle Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F6BD36CC27A2043100792F5D /* Framework */,
 				F6879F4727A1F42E0022C3F0 /* AppDelegate */,
 				F6879F4A27A1F4BA0022C3F0 /* Modules */,
 				F6879F4827A1F43B0022C3F0 /* Supporting Files */,
@@ -110,9 +117,43 @@
 		F6879F4C27A1F5200022C3F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F6879F3B27A1F3DC0022C3F0 /* ContentView.swift */,
+				F6879F3B27A1F3DC0022C3F0 /* TopQuestionListView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F6BD36CC27A2043100792F5D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36D027A2065C00792F5D /* Enums */,
+				F6BD36CD27A2052000792F5D /* Counter */,
+				F6BD36D327A2096600792F5D /* Question Cell */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		F6BD36CD27A2052000792F5D /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36CE27A2056D00792F5D /* CounterView.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		F6BD36D027A2065C00792F5D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36D127A2066F00792F5D /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F6BD36D327A2096600792F5D /* Question Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36D427A2099D00792F5D /* QuestionCellView.swift */,
+			);
+			path = "Question Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6879F3C27A1F3DC0022C3F0 /* ContentView.swift in Sources */,
+				F6879F3C27A1F3DC0022C3F0 /* TopQuestionListView.swift in Sources */,
 				F6879F3A27A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift in Sources */,
+				F6BD36D227A2066F00792F5D /* Enums.swift in Sources */,
+				F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */,
+				F6BD36CF27A2056D00792F5D /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +366,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,6 +395,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,7 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

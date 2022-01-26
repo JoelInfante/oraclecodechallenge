@@ -11,7 +11,7 @@ import SwiftUI
 struct Oracle_Code_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TopQuestionListView()
         }
     }
 }
