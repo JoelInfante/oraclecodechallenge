@@ -21,4 +21,5 @@ struct QuestionFixed: Identifiable {
 struct OwnerFixed{
     let reputation: String
     let authorName: String
+    let imageUrl: String
 }

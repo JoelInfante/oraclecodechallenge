@@ -5,9 +5,20 @@
 //  Created by Joel Andre Hernández Infante on 26/01/22.
 //
 
+import UIKit
 import Foundation
 
 class NetworkManager {
+    
+    func loadImage(for urlString: String, completionHandler: @escaping (UIImage) -> Void) {
+        guard let url = URL(string: urlString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
+            completionHandler(UIImage(data: data) ?? UIImage())
+        }
+        task.resume()
+    }
     
     func fetchQuestions(completionHandler: @escaping (Questions) -> Void) {
         let url = URL(string: "https://api.stackexchange.com/2.3/questions?pagesize=10&order=desc&sort=votes&tagged=swiftui&site=stackoverflow")!

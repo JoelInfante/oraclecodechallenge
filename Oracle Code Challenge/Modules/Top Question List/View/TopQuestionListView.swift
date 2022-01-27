@@ -13,8 +13,10 @@ struct TopQuestionListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.questions ?? []) { question in
-                NavigationLink(destination: QuestionDetailView(question: question)) {
-                    QuestionCellView(title: question.title, tags: question.tags, date: question.date, scoreCount: question.scoreCount, responsesCount: question.answerCount, viewsCount: question.viewCount)
+                Section {
+                    NavigationLink(destination: QuestionDetailView(question: question)) {
+                        QuestionCellView(title: question.title, tags: question.tags, date: question.date, scoreCount: question.scoreCount, responsesCount: question.answerCount, viewsCount: question.viewCount)
+                    }
                 }
             }
             .listStyle(.inset)

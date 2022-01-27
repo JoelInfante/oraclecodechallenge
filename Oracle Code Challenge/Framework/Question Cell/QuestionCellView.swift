@@ -22,6 +22,7 @@ struct QuestionCellView: View {
                 Text(title)
                     .bold()
                     .lineLimit(nil)
+                    .minimumScaleFactor(0.01)
                 Text(tags)
                     .bold()
                     .foregroundColor(.blue)

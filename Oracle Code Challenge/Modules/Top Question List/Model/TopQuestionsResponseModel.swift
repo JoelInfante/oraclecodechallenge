@@ -24,4 +24,5 @@ struct Question: Decodable {
 struct Owner: Decodable{
     let reputation: Int
     let display_name: String
+    let profile_image: String
 }
