@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TopQuestionListView: View {
+    var questions = QuestionList.topTen
+    
     var body: some View {
         NavigationView {
-            List(1..<20) { item in
-                QuestionCellView(title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", tags: "lorem,ipsum,dolor,sit,amet", date: "Asked on Sep 15th, 2019", scoreCount: "162", responsesCount: "22", viewsCount: "141k")
+            List(questions.items) { question in
+                QuestionCellView(title: question.title, tags: question.tags.joined(separator: ", "), date: "Asked on Sep 15th, 2019", scoreCount: String(question.score), responsesCount: String(question.answer_count), viewsCount: String(question.view_count))
             }
             .listStyle(.inset)
             .navigationTitle("Top Questions")

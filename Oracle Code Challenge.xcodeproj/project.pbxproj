@@ -14,6 +14,7 @@
 		F6BD36CF27A2056D00792F5D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36CE27A2056D00792F5D /* CounterView.swift */; };
 		F6BD36D227A2066F00792F5D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D127A2066F00792F5D /* Enums.swift */; };
 		F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D427A2099D00792F5D /* QuestionCellView.swift */; };
+		F6BD36D827A2108400792F5D /* TopQuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F6BD36CE27A2056D00792F5D /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		F6BD36D127A2066F00792F5D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F6BD36D427A2099D00792F5D /* QuestionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellView.swift; sourceTree = "<group>"; };
+		F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		F6879F4B27A1F4DB0022C3F0 /* Top Question List */ = {
 			isa = PBXGroup;
 			children = (
+				F6BD36D627A2106900792F5D /* Model */,
 				F6879F4C27A1F5200022C3F0 /* View */,
 			);
 			path = "Top Question List";
@@ -154,6 +157,14 @@
 				F6BD36D427A2099D00792F5D /* QuestionCellView.swift */,
 			);
 			path = "Question Cell";
+			sourceTree = "<group>";
+		};
+		F6BD36D627A2106900792F5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				F6BD36D227A2066F00792F5D /* Enums.swift in Sources */,
 				F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */,
 				F6BD36CF27A2056D00792F5D /* CounterView.swift in Sources */,
+				F6BD36D827A2108400792F5D /* TopQuestionsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
