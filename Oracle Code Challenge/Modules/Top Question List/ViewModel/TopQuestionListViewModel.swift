@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 // MARK: - Top Question List View Model
-final class TopQuestionListViewModel: ObservableObject {
+final class TopQuestionListViewModel: ObservableObject, TopQuestionListViewModelProtocol {
     @Published var questions: [QuestionFixed]?
     
     /// Call the NetworkManager to get the questions data also when the data is already fetched

@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 // MARK: - Question Detail View Model
-final class QuestionDetailViewModel: ObservableObject {
+final class QuestionDetailViewModel: ObservableObject, QuestionDetailViewModelProtocol {
     @Published var image: UIImage?
     
     /// Call the NetworkManager to get the profile image of the author data

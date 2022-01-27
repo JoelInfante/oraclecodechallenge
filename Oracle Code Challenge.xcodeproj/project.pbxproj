@@ -21,7 +21,25 @@
 		F6BD36E527A2385800792F5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E427A2385800792F5D /* NetworkManager.swift */; };
 		F6BD36E727A23E5800792F5D /* TopQuestionsFixedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E627A23E5800792F5D /* TopQuestionsFixedModel.swift */; };
 		F6BD36EA27A265DC00792F5D /* QuestionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E927A265DC00792F5D /* QuestionDetailViewModel.swift */; };
+		F6BD36FA27A2F35300792F5D /* TopQuestionListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36F927A2F35300792F5D /* TopQuestionListViewModelProtocol.swift */; };
+		F6BD36FD27A2F46500792F5D /* TopQuestionListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36FC27A2F46500792F5D /* TopQuestionListViewModelMock.swift */; };
+		F6BD36FE27A2F4FA00792F5D /* TopQuestionListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36F927A2F35300792F5D /* TopQuestionListViewModelProtocol.swift */; };
+		F6BD36FF27A2F55900792F5D /* TopQuestionsFixedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E627A23E5800792F5D /* TopQuestionsFixedModel.swift */; };
+		F6BD370127A2F85D00792F5D /* OracleCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD370027A2F85D00792F5D /* OracleCodeChallengeTests.swift */; };
+		F6BD370327A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD370227A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift */; };
+		F6BD370527A2FEB100792F5D /* QuestionDetailViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD370427A2FEB100792F5D /* QuestionDetailViewModelMock.swift */; };
+		F6BD370627A2FEED00792F5D /* QuestionDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD370227A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6BD36F327A267CD00792F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6879F2E27A1F3DC0022C3F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6879F3527A1F3DC0022C3F0;
+			remoteInfo = "Oracle Code Challenge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F6879F3627A1F3DC0022C3F0 /* Oracle Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oracle Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,10 +57,23 @@
 		F6BD36E427A2385800792F5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F6BD36E627A23E5800792F5D /* TopQuestionsFixedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionsFixedModel.swift; sourceTree = "<group>"; };
 		F6BD36E927A265DC00792F5D /* QuestionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModel.swift; sourceTree = "<group>"; };
+		F6BD36EF27A267CD00792F5D /* Oracle Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oracle Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BD36F927A2F35300792F5D /* TopQuestionListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionListViewModelProtocol.swift; sourceTree = "<group>"; };
+		F6BD36FC27A2F46500792F5D /* TopQuestionListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionListViewModelMock.swift; sourceTree = "<group>"; };
+		F6BD370027A2F85D00792F5D /* OracleCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleCodeChallengeTests.swift; sourceTree = "<group>"; };
+		F6BD370227A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		F6BD370427A2FEB100792F5D /* QuestionDetailViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModelMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F6879F3327A1F3DC0022C3F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD36EC27A267CD00792F5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F6879F3827A1F3DC0022C3F0 /* Oracle Code Challenge */,
+				F6BD36F027A267CD00792F5D /* Oracle Code ChallengeTests */,
 				F6879F3727A1F3DC0022C3F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F6879F3627A1F3DC0022C3F0 /* Oracle Code Challenge.app */,
+				F6BD36EF27A267CD00792F5D /* Oracle Code ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +148,7 @@
 		F6879F4A27A1F4BA0022C3F0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F6BD36F827A2F32800792F5D /* Protocols */,
 				F6879F4B27A1F4DB0022C3F0 /* Top Question List */,
 				F6BD36D927A21ADD00792F5D /* Question Detail */,
 			);
@@ -233,6 +267,33 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F6BD36F027A267CD00792F5D /* Oracle Code ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36FB27A2F40800792F5D /* TopQuestionListTests */,
+			);
+			path = "Oracle Code ChallengeTests";
+			sourceTree = "<group>";
+		};
+		F6BD36F827A2F32800792F5D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36F927A2F35300792F5D /* TopQuestionListViewModelProtocol.swift */,
+				F6BD370227A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F6BD36FB27A2F40800792F5D /* TopQuestionListTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36FC27A2F46500792F5D /* TopQuestionListViewModelMock.swift */,
+				F6BD370427A2FEB100792F5D /* QuestionDetailViewModelMock.swift */,
+				F6BD370027A2F85D00792F5D /* OracleCodeChallengeTests.swift */,
+			);
+			path = TopQuestionListTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +314,24 @@
 			productReference = F6879F3627A1F3DC0022C3F0 /* Oracle Code Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F6BD36EE27A267CD00792F5D /* Oracle Code ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BD36F527A267CD00792F5D /* Build configuration list for PBXNativeTarget "Oracle Code ChallengeTests" */;
+			buildPhases = (
+				F6BD36EB27A267CD00792F5D /* Sources */,
+				F6BD36EC27A267CD00792F5D /* Frameworks */,
+				F6BD36ED27A267CD00792F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6BD36F427A267CD00792F5D /* PBXTargetDependency */,
+			);
+			name = "Oracle Code ChallengeTests";
+			productName = "Oracle Code ChallengeTests";
+			productReference = F6BD36EF27A267CD00792F5D /* Oracle Code ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +344,10 @@
 				TargetAttributes = {
 					F6879F3527A1F3DC0022C3F0 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					F6BD36EE27A267CD00792F5D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F6879F3527A1F3DC0022C3F0;
 					};
 				};
 			};
@@ -282,6 +365,7 @@
 			projectRoot = "";
 			targets = (
 				F6879F3527A1F3DC0022C3F0 /* Oracle Code Challenge */,
+				F6BD36EE27A267CD00792F5D /* Oracle Code ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +380,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6BD36ED27A267CD00792F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -306,7 +397,9 @@
 				F6879F3C27A1F3DC0022C3F0 /* TopQuestionListView.swift in Sources */,
 				F6879F3A27A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift in Sources */,
 				F6BD36E527A2385800792F5D /* NetworkManager.swift in Sources */,
+				F6BD36FA27A2F35300792F5D /* TopQuestionListViewModelProtocol.swift in Sources */,
 				F6BD36EA27A265DC00792F5D /* QuestionDetailViewModel.swift in Sources */,
+				F6BD370327A2FDE800792F5D /* QuestionDetailViewModelProtocol.swift in Sources */,
 				F6BD36D227A2066F00792F5D /* Enums.swift in Sources */,
 				F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */,
 				F6BD36DF27A221D800792F5D /* QuestionDetailBodyView.swift in Sources */,
@@ -318,7 +411,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6BD36EB27A267CD00792F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BD370127A2F85D00792F5D /* OracleCodeChallengeTests.swift in Sources */,
+				F6BD36FD27A2F46500792F5D /* TopQuestionListViewModelMock.swift in Sources */,
+				F6BD370527A2FEB100792F5D /* QuestionDetailViewModelMock.swift in Sources */,
+				F6BD36FE27A2F4FA00792F5D /* TopQuestionListViewModelProtocol.swift in Sources */,
+				F6BD36FF27A2F55900792F5D /* TopQuestionsFixedModel.swift in Sources */,
+				F6BD370627A2FEED00792F5D /* QuestionDetailViewModelProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6BD36F427A267CD00792F5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6879F3527A1F3DC0022C3F0 /* Oracle Code Challenge */;
+			targetProxy = F6BD36F327A267CD00792F5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F6879F4227A1F3DC0022C3F0 /* Debug */ = {
@@ -495,6 +609,40 @@
 			};
 			name = Release;
 		};
+		F6BD36F627A267CD00792F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Joel-Andre-Hernandez-Infante.Oracle-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oracle Code Challenge.app/Oracle Code Challenge";
+			};
+			name = Debug;
+		};
+		F6BD36F727A267CD00792F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Joel-Andre-Hernandez-Infante.Oracle-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oracle Code Challenge.app/Oracle Code Challenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +660,15 @@
 			buildConfigurations = (
 				F6879F4527A1F3DC0022C3F0 /* Debug */,
 				F6879F4627A1F3DC0022C3F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BD36F527A267CD00792F5D /* Build configuration list for PBXNativeTarget "Oracle Code ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BD36F627A267CD00792F5D /* Debug */,
+				F6BD36F727A267CD00792F5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
