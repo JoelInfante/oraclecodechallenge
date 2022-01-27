@@ -21,12 +21,15 @@ struct QuestionCellView: View {
             VStack(alignment: .leading, spacing: 11) {
                 Text(title)
                     .bold()
+                    .lineLimit(nil)
                 Text(tags)
                     .bold()
                     .foregroundColor(.blue)
+                    .lineLimit(nil)
                 Text(date)
                     .bold()
                     .foregroundColor(.gray)
+                    .lineLimit(nil)
                 HStack(alignment: .center, spacing: 50) {
                     CounterView(counterType: .score, count: scoreCount)
                     CounterView(counterType: .responses, count: responsesCount)

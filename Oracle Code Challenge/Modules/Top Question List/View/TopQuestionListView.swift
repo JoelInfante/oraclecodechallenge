@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct TopQuestionListView: View {
-    var questions = QuestionList.top
+    @StateObject private var viewModel = TopQuestionListViewModel()
     
     var body: some View {
         NavigationView {
-            List(questions.items) { question in
+            List(viewModel.questions ?? []) { question in
                 NavigationLink(destination: QuestionDetailView(question: question)) {
-                    QuestionCellView(title: question.title, tags: question.tags.joined(separator: ", "), date: "Asked on Sep 15th, 2019", scoreCount: String(question.score), responsesCount: String(question.answer_count), viewsCount: String(question.view_count))
+                    QuestionCellView(title: question.title, tags: question.tags, date: question.date, scoreCount: question.scoreCount, responsesCount: question.answerCount, viewsCount: question.viewCount)
                 }
             }
             .listStyle(.inset)
             .navigationTitle("Top Questions")
         }
         .navigationBarBackButtonHidden(true)
+        .onAppear { viewModel.fetchQuestions() }
     }
 }
 
