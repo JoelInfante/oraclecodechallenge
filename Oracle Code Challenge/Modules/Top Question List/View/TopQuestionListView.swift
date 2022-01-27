@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopQuestionListView: View {
-    var questions = QuestionList.topTen
+    var questions = QuestionList.top
     
     var body: some View {
         NavigationView {
