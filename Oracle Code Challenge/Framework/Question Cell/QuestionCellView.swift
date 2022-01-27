@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+// MARK: - Question Cell View
 
+/// A view that contains every single element to show a brief description of the questions in order to show them as a list
 struct QuestionCellView: View {
     var title: String
     var tags: String

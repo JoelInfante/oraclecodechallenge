@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// MARK: - Counter View
+
+/// A view to show every simgle match between icons and counters (e.g., scores, views, responses)
 struct CounterView: View {
     var counterType: CounterType
     var count: String

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - SwiftUI App Delegate
 @main
 struct Oracle_Code_ChallengeApp: App {
     var body: some Scene {

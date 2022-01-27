@@ -7,6 +7,9 @@
 
 import Foundation
 
+// MARK: - Top Questions Fixed Model
+
+/// The following model is used manage, process and adjust the data in order to display it more easily on the UI.
 struct QuestionFixed: Identifiable {
     let id = UUID()
     let title: String

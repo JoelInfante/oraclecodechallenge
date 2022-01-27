@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+// MARK: - Question Detail Body View
 
+/// A view that contains the general author description of a specific question, it shows the name, reputation and profile image of them
 struct QuestionDetailBodyView: View {
     var detail: String
     var author: String

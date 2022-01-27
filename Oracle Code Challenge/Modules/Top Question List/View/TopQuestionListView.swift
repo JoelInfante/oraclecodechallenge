@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+// MARK: - Top Question List View
+
+/** This view once its showed it calls the view model to fetch all the data related
+ to questions from stack overflow, when the data is updated the view will be refreshed
+ and its going to display every information  in a list of custom cells, when its tapped one
+ cell it will push the next view for the general description.
+ */
 struct TopQuestionListView: View {
     @StateObject private var viewModel = TopQuestionListViewModel()
     

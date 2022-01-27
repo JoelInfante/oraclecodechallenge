@@ -7,8 +7,13 @@
 
 import SwiftUI
 
+// MARK: - Question Detail View
+
+/** In this view once its showed it calls the view model to fetch the profile image of
+ the author of the question  and will display a general description about it.
+ */
 struct QuestionDetailView: View {
-    @StateObject private var viewModel = TopQuestionListViewModel()
+    @StateObject private var viewModel = QuestionDetailViewModel()
     var question: QuestionFixed
     
     var body: some View {

@@ -20,6 +20,7 @@
 		F6BD36E227A233A300792F5D /* TopQuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E127A233A300792F5D /* TopQuestionListViewModel.swift */; };
 		F6BD36E527A2385800792F5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E427A2385800792F5D /* NetworkManager.swift */; };
 		F6BD36E727A23E5800792F5D /* TopQuestionsFixedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E627A23E5800792F5D /* TopQuestionsFixedModel.swift */; };
+		F6BD36EA27A265DC00792F5D /* QuestionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36E927A265DC00792F5D /* QuestionDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F6BD36E127A233A300792F5D /* TopQuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionListViewModel.swift; sourceTree = "<group>"; };
 		F6BD36E427A2385800792F5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F6BD36E627A23E5800792F5D /* TopQuestionsFixedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionsFixedModel.swift; sourceTree = "<group>"; };
+		F6BD36E927A265DC00792F5D /* QuestionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		F6BD36D927A21ADD00792F5D /* Question Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F6BD36E827A265BD00792F5D /* ViewModel */,
 				F6BD36DA27A21AF700792F5D /* View */,
 			);
 			path = "Question Detail";
@@ -220,6 +223,14 @@
 				F6BD36E427A2385800792F5D /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F6BD36E827A265BD00792F5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36E927A265DC00792F5D /* QuestionDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				F6879F3C27A1F3DC0022C3F0 /* TopQuestionListView.swift in Sources */,
 				F6879F3A27A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift in Sources */,
 				F6BD36E527A2385800792F5D /* NetworkManager.swift in Sources */,
+				F6BD36EA27A265DC00792F5D /* QuestionDetailViewModel.swift in Sources */,
 				F6BD36D227A2066F00792F5D /* Enums.swift in Sources */,
 				F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */,
 				F6BD36DF27A221D800792F5D /* QuestionDetailBodyView.swift in Sources */,

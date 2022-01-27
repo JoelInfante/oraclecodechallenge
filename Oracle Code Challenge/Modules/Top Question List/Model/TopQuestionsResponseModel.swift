@@ -6,7 +6,9 @@
 //
 
 import Foundation
+// MARK: - Top Questions Response Model
 
+/// The following model is used to get and cast the exact data response that comes from the API.
 struct Questions: Decodable {
     let items: [Question]
 }
