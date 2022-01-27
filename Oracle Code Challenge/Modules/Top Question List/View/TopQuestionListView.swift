@@ -13,11 +13,14 @@ struct TopQuestionListView: View {
     var body: some View {
         NavigationView {
             List(questions.items) { question in
-                QuestionCellView(title: question.title, tags: question.tags.joined(separator: ", "), date: "Asked on Sep 15th, 2019", scoreCount: String(question.score), responsesCount: String(question.answer_count), viewsCount: String(question.view_count))
+                NavigationLink(destination: QuestionDetailView(question: question)) {
+                    QuestionCellView(title: question.title, tags: question.tags.joined(separator: ", "), date: "Asked on Sep 15th, 2019", scoreCount: String(question.score), responsesCount: String(question.answer_count), viewsCount: String(question.view_count))
+                }
             }
             .listStyle(.inset)
             .navigationTitle("Top Questions")
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

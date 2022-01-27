@@ -15,6 +15,8 @@
 		F6BD36D227A2066F00792F5D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D127A2066F00792F5D /* Enums.swift */; };
 		F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D427A2099D00792F5D /* QuestionCellView.swift */; };
 		F6BD36D827A2108400792F5D /* TopQuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */; };
+		F6BD36DC27A21B0F00792F5D /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36DB27A21B0F00792F5D /* QuestionDetailView.swift */; };
+		F6BD36DF27A221D800792F5D /* QuestionDetailBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD36DE27A221D800792F5D /* QuestionDetailBodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		F6BD36D127A2066F00792F5D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F6BD36D427A2099D00792F5D /* QuestionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellView.swift; sourceTree = "<group>"; };
 		F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopQuestionsModel.swift; sourceTree = "<group>"; };
+		F6BD36DB27A21B0F00792F5D /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
+		F6BD36DE27A221D800792F5D /* QuestionDetailBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailBodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F6879F4B27A1F4DB0022C3F0 /* Top Question List */,
+				F6BD36D927A21ADD00792F5D /* Question Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				F6BD36D027A2065C00792F5D /* Enums */,
 				F6BD36CD27A2052000792F5D /* Counter */,
 				F6BD36D327A2096600792F5D /* Question Cell */,
+				F6BD36DD27A221A100792F5D /* Question Detail Body */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -165,6 +171,30 @@
 				F6BD36D727A2108400792F5D /* TopQuestionsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6BD36D927A21ADD00792F5D /* Question Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36DA27A21AF700792F5D /* View */,
+			);
+			path = "Question Detail";
+			sourceTree = "<group>";
+		};
+		F6BD36DA27A21AF700792F5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36DB27A21B0F00792F5D /* QuestionDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6BD36DD27A221A100792F5D /* Question Detail Body */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD36DE27A221D800792F5D /* QuestionDetailBodyView.swift */,
+			);
+			path = "Question Detail Body";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +271,8 @@
 				F6879F3A27A1F3DC0022C3F0 /* Oracle_Code_ChallengeApp.swift in Sources */,
 				F6BD36D227A2066F00792F5D /* Enums.swift in Sources */,
 				F6BD36D527A2099D00792F5D /* QuestionCellView.swift in Sources */,
+				F6BD36DF27A221D800792F5D /* QuestionDetailBodyView.swift in Sources */,
+				F6BD36DC27A21B0F00792F5D /* QuestionDetailView.swift in Sources */,
 				F6BD36CF27A2056D00792F5D /* CounterView.swift in Sources */,
 				F6BD36D827A2108400792F5D /* TopQuestionsModel.swift in Sources */,
 			);

@@ -14,6 +14,7 @@ struct QuestionCellView: View {
     var scoreCount: String
     var responsesCount: String
     var viewsCount: String
+    var isDetailView: Bool = false
     
     var body: some View {
         HStack {
@@ -26,13 +27,13 @@ struct QuestionCellView: View {
                 Text(date)
                     .bold()
                     .foregroundColor(.gray)
-                HStack(alignment: .center, spacing: 55) {
+                HStack(alignment: .center, spacing: 50) {
                     CounterView(counterType: .score, count: scoreCount)
                     CounterView(counterType: .responses, count: responsesCount)
                     CounterView(counterType: .views, count: viewsCount)
                 }
             }
-            Image("right_arrow")
+            if !isDetailView { Image("right_arrow") }
         }
         .padding()
     }

@@ -17,6 +17,8 @@ struct CounterView: View {
                 .resizable()
                 .frame(width: 20, height: 20, alignment: .center)
             Text(count)
+                .scaledToFill()
+                .minimumScaleFactor(0.5)
                 .foregroundColor(Color("Cream Blue"))
         }
     }
