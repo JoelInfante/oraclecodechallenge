@@ -2,6 +2,12 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+## Video of final result
+<p align="center">
+    <img src="https://media.giphy.com/media/NKOZxphjwmTap9xOAQ/giphy.gif"/>
+</p>
+
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
